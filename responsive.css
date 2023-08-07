@@ -1,0 +1,13 @@
+@media(min-width: 100px) and (max-width: 600px) {
+    .hero-poster img{
+       margin-top: 50px;
+       margin-left: 40px;
+    }
+    .about-me-contact{
+        flex-direction: column;
+        padding-top: 20px;
+    }
+    .about-me-address{
+       margin-top: 20px;
+    }
+}

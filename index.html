@@ -8,63 +8,77 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- bootstrap css link -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+    <!-- aos cdn css link -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <!-- css link -->
     <link rel="stylesheet" href="style.css">
-    <!-- response css link -->
+    <!-- responsive css link -->
     <link rel="stylesheet" href="responsive.css">
     <!-- font awesome cdn link -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 
-    <title>Protfolio Design</title>
+    <title>Mohammad Haseeb</title>
 </head>
 <body>
    
     <!-- hero section starts here -->
-    <section class="hero">
-        <div class="container-container p-4">
-            <div class="row p-4 m-5 hero-background">
-                <div class="col hero-content p-5 m-5">
-                   <p class="mb-3 pt-5 ps-5">Hi there!This is</p>
-                    <h2 class="ps-5">Mohammad Haseeb</h2>
-                    <h3 class="mb-5 pb-5 ps-5">And I'm a Front End Developer</h3>
-                    <button type="button" class="btn btn-light ms-5">Download CV  <i class="fa-solid fa-download fa-beat"></i></button>
-                    <button type="button" class="btn btn-info socail-communicate">
-                        <ul>
-                            <li><a href="https://www.facebook.com/haseeb.rahman.106902"><i class="fa-brands fa-facebook-messenger social-icon"></i></a></li>
-                            <li><a href="https://mail.google.com/mail/u/0/#inbox"><i class="fa-solid fa-envelope-open-text social-icon"></i></a></li>
-                            <li><a href="https://github.com/Mohammad-Hasee"><i class="fa-brands fa-square-github social-icon"></i></a></li>
-                            <li><a href="https://www.linkedin.com/feed/"><i class="fa-brands fa-linkedin social-icon"></i></a></li>
-                        </ul>
-                    </button>
-                </div>
-                <div class="col p-5 d-block "><img src="assets/images/Hasee.jpg" alt="Image is loading" title="protfolio site"></div>
+    <section class="hero py-4 my-4" id="hero">
+      <div class="container-hero">
+        <div class="row">
+          <div class="col-12 col-md-6">
+            <div class="content-area">
+              <p>HI there! This is </p>
+              <h2>Mohammad Haseeb</h2>
+              <h3>I am a Front End Developer</h3>
+              <div class="social-communication">
+                <ul>
+                  <li class="download"><a href="assets/cv/my cv.pdf" download>Download <i class="fa-solid fa-download fa-beat-fade"></i></a></li>
+                  <li><a href="https://www.facebook.com/haseeb.rahman.106902"><i class="fa-brands fa-facebook fa-brand"></i></a></li>
+                  <li><a href="https://mail.google.com/mail/u/0/#inbox"><i class="fa-regular fa-brands fa-envelope fa-brand"></i></a></li>
+                  <li><a href="https://www.linkedin.com/in/mohammad-haseeb-076946262/"><i class="fa-brands fa-linkedin fa-brand"></i></a></li>
+                  <li><a href="https://github.com/Mohammad-Hasee"><i class="fa-brands fa-github fa-brand"></i></a></li>
+                </ul>
+              </div>
             </div>
+          </div>
+          <div class="col-12 col-md-6">
+            <div class="hero-poster">
+              <img src="assets/images/Hasee.jpg" alt="My image is loading" height="100%" width="100%">
+            </div>
+          </div>
         </div>
+      </div>
     </section>
     <!-- hero section ending here -->
     <!-- navbar section starts here -->
-    <nav class="navbar navbar-expand-lg .bg-light mb-5">
+    <nav class="navbar navbar-expand-lg bg-light sticky-top mb-5">
         <div class="container-fluid">
           <a class="navbar-brand ps-5 ms-5" href="#">With a keen <span>eye</span> for details</a>
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" >
             <span class="navbar-toggler-icon"></span>
           </button>
           <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav ms-auto p-2 mb-2 mb-lg-0">
+            <ul class="navbar-nav ms-auto  mb-lg-0">
               <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="#">Home</a>
+                <a class="nav-link active" aria-current="page" href="#hero">Home</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#">About Me</a>
+                <a class="nav-link" href="#about">About Me</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#">Education</a>
+                <a class="nav-link" href="#education">Education</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#">Works</a>
+                <a class="nav-link" href="#skills">Skills</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#protfolio">Protfolio</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#service">Services</a>
               </li>
               <li class="nav-item pe-5 me-3">
-                <button type="button" class="btn btn-primary btn-lg"><a class="nav-link" href="#">Contact</a></button>
+                <button type="button" class="btn btn-primary btn-lg"><a class="nav-link" href="#contact">Contact</a></button>
               </li>
             </ul>
           </div>
@@ -72,386 +86,515 @@
       </nav>
     <!-- navbar section ending here -->
     <!-- about me section starts here -->
-    <section class="about-me mb-5 pb-5">
-        <div class="container-container">
-            <div class="row heading">
-                <div class="col-4 offset-4 text-center ">
-                    <h1 class="p-5 mb-2">About Me</h1>
-                </div>
-            </div>
-            <div class="container-container">
-              <div class="row">
-                <div class="col-4"><img src="assets/images/hridoy.jpg" alt="image is loading" title="about me images"></div>
 
-                <div class="col-8">
-                    <div class="row">
-                        <div class="col-12">
-                            <h2 class="ps-5 pb-2">UI/UX Designer & Web Developer</h2>
-                            <p class="ps-5 pb-5 lead">
-                              I am Mohammad Haseeb but everyone calls me Hridoy. 
-                              After graduating in Computer Science from Bangladesh University 
-                              of Business and Technology, I completed a three month short course 
-                              on web design at BITM.
-                              I was the district champion in cricket.If someone asks me for a task, 
-                              I listen carefully first and understand well what I have to do. 
-                              I am a person who is positive in every aspect of life. 
-                              There are so many things I love to do, see and experience. 
-                              I love to read.
-                            </p>
-                        </div>
-                    </div>
-                    <div class="row">
-                        <div class="col-4 ps-5 ms-5"><img src="assets/images/phone.jpg" alt=""></div>
-                        <div class="col-6 offset-1">
-                          <address class="ps-4 pt-1 pb-4 contact-number ms-5 lead fw-semi-bold">
-                            phone-number - 01785007845 <br>
-                            github - Mohammad-Hasee <br>
-                            mail - haseebrahman318@gmail.com <br>
-                            linkedin - www.linkedin.com/feed/
-                        </address>
-                        </div>
-                    </div>
+      <section class="about-me py-5" id="about">
+        <div class="container">
+          <div class="row">
+            <div class="col-12 col-md-8 offset-2">
+                <div class="title text-center">
+                    <h1 class="fw-bold text-uppercase pb-5 py-4" data-aos="zoom-in-left">About Me</h1>
                 </div>
             </div>
-            </div>
         </div>
-    </section>
-    <!-- about me section ending here -->
-    <!-- education section starts here -->
-    <section class="myjourney p-3">
-      <div class="content-fluid pb-5">
-        <div class="row pb-5 pt-5 text-center">
-          <div class="col-12 journey"><h1>My Journey</h1></div>
+          <div class="row">
+            <div class="col-12 col-md-4">
+              <div class="about-me-poster">
+                <img src="assets/images/hridoy (2).jpg" data-aos="fade-up"
+                data-aos-duration="3000" alt="my image is loading" height="100%" width="100%">
+                <h4 class="text-center pt-3">Mohammad Hashibur Rahman Hridoy</h4>
+              </div>
+            </div>
+            <div class="col-12 col-md-8">
+            <div class="about-me-content">
+              <h2>UI/UX Designer & Web Developer</h2>
+              <p class="lead" data-aos="fade-up"
+              data-aos-duration="3000">
+                I am Mohammad Haseeb but everyone calls me Hridoy. 
+                After graduating in Computer Science from Bangladesh University 
+                of Business and Technology, I completed a three month short course 
+                on web design at BITM.
+                I was the district champion in cricket.If someone asks me for a task, 
+                I listen carefully first and understand well what I have to do. 
+                I am a person who is positive in every aspect of life. 
+                There are so many things I love to do, see and experience. 
+                I love to read.
+              </p>
+              <div class="about-me-contact">
+                <div class="about-me-phone-image">
+                  <img src="assets/images/phone.jpg" data-aos="fade-down"
+                  data-aos-easing="linear"
+                  data-aos-duration="1500" alt="phone image loading" width="100%" height="100%">
+                </div>
+                <div class="about-me-address" data-aos="fade-down"
+                data-aos-easing="linear"
+                data-aos-duration="1500">
+                  <a href="#"><b>phone-number</b></a> - 01785007845 <br>
+                         <a href="github.com/Mohammad-Hasee"><b>github</b></a> - Mohammad-Hasee <br>
+                         <a href="https://mail.google.com/mail/u/0/#inbox"><b>mail</b></a> - haseebrahman318@gmail.com <br>
+                         <a href="linkedin.com/in/mohammad-haseeb-076946262/"><b>linkedin</b></a> - www.linkedin.com/feed/ <br>
+                         <a href="facebook.com/haseeb.rahman.106902"><b>messanger</b></a> -facebook.com/haseeb.rahman.106902 <br>
+                </div>
+              </div>
+            </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+<!-- about me section ending here -->
+<!-- education section starts here -->
+
+<section class="myjourney my-5" id="education">
+  <div class="container-fluid">
+    <div class="row">
+      <div class="col-12 col-md-6-offset-2">
+        <div class="content journey py-5 text-center">
+          <h1>My Journey</h1>
+        </div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-12 col-md-6"><div class="content py-2"><h2>Landmark</h2></div></div>
+      <div class="col-3"><div class="content py-2"><h2>Experience</h2></div></div>
+    </div>
+    <div class="row">
+      <div class="col-12 col-md-3 education">
+        <div class="row">
+          <div class="col-8 col-md-8 high-school-image offset-2 pt-5 pb-3">
+            <img src="assets/images/multi.png" data-aos="flip-left"
+            data-aos-easing="ease-out-cubic"
+            data-aos-duration="2000" alt="school image is loading" title="schools image" width="100%" height="100%">
+          </div>
         </div>
         <div class="row">
-          <div class="col-3 pb-3"><h2>Landmark</h2></div>
-          <div class="col-4 text-center offset-5"><h2>Experience</h2></div>
-        </div>
-        <div class="row">
-          <div class="col-3 education mt-2 mb-2 me-2">
-            <div class="row">
-              <div class="col-8 offset-2 pt-5 pb-3">
-                <img src="assets/images/multi.png" alt="school image is loading" title="schools image" width="100%" height="100%">
-              </div>
-            </div>
-            <div class="row">
-              <div class="col-12 education-content mb-3 text-center lead">
-                <p> School name - nukali multilateral high school Location-<br>Hamlet - Nukali, postoffice - Baghabarighat,
-                  Tana - Shahjadpur, Township - Shirajgong</p><br>
-                  <p>I gave my <b>SSC</b> exam from this school and passed with success. 
-                      I achieved the glory of becoming district champion by playing sports side by side. 
-                      At this time I did a basic computer course</p>
-              </div>
-            </div>
-          </div>
-          <div class="col-3 education m-2">
-            <div class="row">
-              <div class="col-8 offset-2 pt-5 pb-3">
-                <img src="assets/images/alhera.jpg" alt="school image is loading" title="schools image" width="100%" height="100%">
-              </div>
-            </div>
-            <div class="row p-2">
-              <div class="col-12 education-content mb-3 text-center lead">
-                <p>College name - Alhera academic school & College <br>Location-<br>Hamlet -  bera, postoffice - bera-pabna,
-                  Thana - shathiya, Township - pabna</p><br>
-                      <p>One of the best college is Alhera Academic
-                           College as well as one of the best college in Bangladesh.After completing my ssc exam I finished my <b>hsc</b> in here. 
-                           </p>
-              </div>
-            </div>
-          </div>
-          <div class="col-3 education m-2">
-            <div class="row">
-              <div class="col-8 offset-2 pt-5 pb-3">
-                <img src="assets/images/bubt.jpg" alt="school image is loading" title="schools image" width="100%" height="100%">
-              </div>
-            </div>
-            <div class="row p-2">
-              <div class="col-12 education-content mb-3 text-center lead">
-                <p>University name - Bangladesh University of Business and Technology <br>Location-<br>Hamlet -  Rupnogor, postoffice - mirpur,
-                  Thana - Rupnogor , Township - Dhaka</p><br>
-                  <p>
-                      I completed my graduation from this university recently with <b>BSc in CSE</b>
-                      .It was a good journey to me.I achive machine learning.
-                  </p> 
-              </div>
-            </div>
-          </div>
-          <div class="col lead ">
-            <h4>Web Designer</h4>
-            <p class="mb-5 pt-3">Lorem ipsum dolor sit amet consectetur adipisicing elit. 
-              Ullam nam soluta fugit minus? Nulla architecto, 
-              ipsum quos unde aperiam nemo</p>
-              <h4>Web Programmer</h4>
-              <p class="mb-5 pt-3">Lorem ipsum dolor sit amet consectetur adipisicing elit. 
-              Ullam nam soluta fugit minus? Nulla architecto, 
-              ipsum quos unde aperiam nemo</p>
-              <h4> Front End Developer</h4>
-              <p class="pt-3">Lorem ipsum dolor sit amet consectetur adipisicing elit. 
-              Ullam nam soluta fugit minus? Nulla architecto, 
-              ipsum quos unde aperiam nemo</p>
+          <div class="col-12 col-md-12 education-content school mb-3 text-center lead">
+            <p data-aos="fade-down-left">School name - nukali multilateral high school<br> Location-<br>Hamlet - Nukali, postoffice - Baghabari,
+              Tana - Shahjadpur, Township - Shirajgong</p><br>
+              <p data-aos="fade-left">I gave my <b>SSC</b> exam from this school and passed with success. 
+                  I achieved the glory of becoming district champion by playing sports side by side. 
+                  I learn basic computer course</p>
           </div>
         </div>
       </div>
-    </section>
-    <!-- edication section ending here -->
-    <!-- skills section starts here -->
-    <section class="my-skills p-5">
-      <div class="container p-5">
-        <div class="row p-5 text-center">
-          <div class="col-12 skills"><h1>My Skills</h1></div>
-        </div>
+      <div class="col-12 col-md-3 education">
         <div class="row">
-          <div class="col-1"></div>
-          <div class="col-5 "> 
-            <h5 class="progress-title pb-2">HTML</h5>
-            <div class="progress mb-3" role="progressbar" aria-label="Success example" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">
-              <div class="progress-bar bg-success" style="width: 95%">95%</div>
-            </div>
-            <h5 class="progress-title  pb-2">CSS</h5>
-            <div class="progress mb-3" role="progressbar" aria-label="Info example" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100">
-              <div class="progress-bar bg-info text-dark" style="width: 90%">90%</div>
-            </div>
-            <h5 class="progress-title pb-2">BOOTSTRAP</h5>
-            <div class="progress mb-3" role="progressbar" aria-label="Warning example" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100">
-              <div class="progress-bar bg-warning text-dark" style="width: 85%">85%</div>
-            </div>
-            <h5 class="progress-title pb-2">JAVASCRIPT</h5>
-            <div class="progress mb-3" role="progressbar" aria-label="Danger example" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100">
-              <div class="progress-bar bg-danger" style="width: 90%">90%</div>
-            </div>
+          <div class="col-8 col-md-8 college-image offset-2 pt-5 pb-3">
+            <img src="assets/images/alhera.jpg" data-aos="flip-down" alt="school image is loading" title="schools image" width="100%" height="100%">
           </div>
-          <div class="col-5">
-            <h5 class="progress-title  pb-2">REACT</h5>
-            <div class="progress mb-3" role="progressbar" aria-label="Success example" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">
-              <div class="progress-bar bg-danger" style="width: 80%">80%</div>
-            </div>
-            <h5 class="progress-title  pb-2">SQL</h5>
-            <div class="progress mb-3" role="progressbar" aria-label="Info example" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100">
-              <div class="progress-bar bg-warning text-dark" style="width: 90%">90%</div>
-            </div>
-            <h5 class="progress-title  pb-2">PYTHON</h5>
-            <div class="progress mb-3" role="progressbar" aria-label="Warning example" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100">
-              <div class="progress-bar bg-info text-dark" style="width: 80%">80%</div>
-            </div>
-            <h5 class="progress-title  pb-2">JQUARY</h5>
-            <div class="progress mb-3" role="progressbar" aria-label="Danger example" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100">
-              <div class="progress-bar bg-success" style="width: 75%">75%</div>
-            </div>
+        </div>
+        <div class="row p-2">
+          <div class="col-12 col-md-12 education-content college mb-3 mt-5 text-center lead">
+            <p data-aos="zoom-in-up">College name - Alhera academic school & College <br>Location-<br>Hamlet -  bera, postoffice - bera-pabna,
+              Thana - shathiya, Township - pabna</p><br>
+                  <p data-aos="fade-down"
+                  data-aos-easing="linear"
+                  data-aos-duration="1500">One of the best college is Alhera Academic
+                       College as well as one of the best college in Bangladesh.After completing my ssc exam I finished my <b>hsc</b> in here. 
+                       </p>
           </div>
-          <div class="col-1"></div>
         </div>
       </div>
-    </section>
-    <!-- skills section ending here -->
-    <!-- my protfolio section starts here -->
-    <section class="protfolio pb-5 mb-5">
-      <div class="container">
-        <div class="row p-5 text-center">
-          <div class="col-12"><h1>Protfolio</h1></div>
+      <div class="col-12 col-md-3 education">
+        <div class="row">
+          <div class="col-8 col-md-8 versity-image offset-2 pt-5 pb-3">
+            <img src="assets/images/bubt.jpg" data-aos="flip-left"
+            data-aos-easing="ease-out-cubic"
+            data-aos-duration="2000" alt="school image is loading" title="schools image" width="100%" height="100%">
+          </div>
         </div>
-        <!-- nav tabs heading starts here -->
-        <ul class="nav nav-tabs justify-content-center pb-5" id="myTab" role="tablist">
-          <li class="nav-item" role="presentation">
-            <button class="nav-link active" id="home-tab" data-bs-toggle="tab" data-bs-target="#home" type="button" role="tab" aria-controls="home-tab-pane" aria-selected="true">All Works</button>
-          </li>
-          <li class="nav-item" role="presentation">
-            <button class="nav-link" id="profile-tab" data-bs-toggle="tab" data-bs-target="#about" type="button" role="tab" aria-controls="profile-tab-pane" aria-selected="false">Web Design</button>
-          </li>
-          <li class="nav-item" role="presentation">
-            <button class="nav-link" id="contact-tab" data-bs-toggle="tab" data-bs-target="#gallary" type="button" role="tab" aria-controls="contact-tab-pane" aria-selected="false">Gallary</button>
-          </li>
-          <li class="nav-item" role="presentation">
-            <button class="nav-link" id="contact-tab" data-bs-toggle="tab" data-bs-target="#psd" type="button" role="tab" aria-controls="contact-tab-pane" aria-selected="false">PSD</button>
-          </li>
-        </ul>
-        <!-- nav tabs heading ending here -->
-        <!-- nav tabs body starts here -->
-        <div class="tab-content" id="myTabContent">
-          <div class="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="home-tab" tabindex="0">
-            <div class="row">
-              <!-- single item starts here -->
-              <div class="col-4 g-3">
-                <div class="content-area">
-                  <img src="assets/images/hero.jpg" alt="wed design" title="web design" width="100%" height="100%">
-                  <div class="content-overlay"><a href="#">Hasee</a></div>
-                </div>
+        <div class="row p-2">
+          <div class="col-12 col-md-12 education-content versity mb-3 mt-5 text-center lead">
+            <p data-aos="fade-down-right">University name - Bangladesh University of Business and Technology <br>Location-<br>Hamlet -  Rupnogor, postoffice - mirpur,
+              Thana - Rupnogor , Township - Dhaka</p><br>
+              <p data-aos="fade-right">
+                  I completed my graduation from this university recently with <b>BSc in CSE</b>
+                  .It was a good journey to me.I achive machine learning with my honorable teacher.
+              </p> 
+          </div>
+        </div>
+      </div>
+      <div class="col-12 col-md-3 lead last-col p-4">
+        <h4 data-aos="fade-down"
+        data-aos-easing="linear"
+        data-aos-duration="1500">Web Designer</h4>
+        <p class="mb-5 pt-3" data-aos="fade-up"
+        data-aos-duration="3000">Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+          Ullam nam soluta fugit minus? Nulla architecto, 
+          ipsum quos unde aperiam nemo</p>
+          <h4 data-aos="fade-up"
+          data-aos-duration="3000">Web Programmer</h4>
+          <p class="mb-5 pt-3" data-aos="fade-down"
+          data-aos-easing="linear"
+          data-aos-duration="1500">Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+          Ullam nam soluta fugit minus? Nulla architecto, 
+          ipsum quos unde aperiam nemo</p>
+          <h4 data-aos="fade-down"
+          data-aos-easing="linear"
+          data-aos-duration="1500"> Front End Developer</h4>
+          <p class="pt-3" data-aos="fade-up"
+          data-aos-duration="3000">Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+          Ullam nam soluta fugit minus? Nulla architecto, 
+          ipsum quos unde aperiam nemo</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+  <!-- edication section ending here -->
+  <!-- skills section starts here -->
+  
+  <section class="my-skills p-5" id="skills">
+    <div class="container p-5">
+      <div class="row p-5 text-center">
+        <div class="col-8 skills offset-2"><h1 data-aos="flip-left"
+          data-aos-easing="ease-out-cubic"
+          data-aos-duration="2000">My Skills</h1></div>
+      </div>
+      <div class="row between-gaap">
+        <div class="col-1"></div>
+        <div class="col-5 col-md-5"> 
+          <h5 class="progress-title pb-2" data-aos="fade-up-right">HTML</h5>
+          <div class="progress mb-3" role="progressbar" aria-label="Success example" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">
+            <div class="progress-bar bg-success" style="width: 95%">95%</div>
+          </div>
+          <h5 class="progress-title  pb-2" data-aos="fade-up-left">CSS</h5>
+          <div class="progress mb-3" role="progressbar" aria-label="Info example" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100">
+            <div class="progress-bar bg-info text-dark" style="width: 90%">90%</div>
+          </div>
+          <h5 class="progress-title pb-2" data-aos="fade-down-right">BOOTSTRAP</h5>
+          <div class="progress mb-3" role="progressbar" aria-label="Warning example" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100">
+            <div class="progress-bar bg-warning text-dark" style="width: 85%">85%</div>
+          </div>
+          <h5 class="progress-title pb-2" data-aos="fade-down-left">JAVASCRIPT</h5>
+          <div class="progress mb-3" role="progressbar" aria-label="Danger example" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100">
+            <div class="progress-bar bg-danger" style="width: 90%">90%</div>
+          </div>
+        </div>
+        <div class="col-5 col-md-5">
+          <h5 class="progress-title  pb-2" data-aos="fade-down-left">REACT</h5>
+          <div class="progress mb-3" role="progressbar" aria-label="Success example" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">
+            <div class="progress-bar bg-danger" style="width: 80%">80%</div>
+          </div>
+          <h5 class="progress-title  pb-2" data-aos="fade-down-right">SQL</h5>
+          <div class="progress mb-3" role="progressbar" aria-label="Info example" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100">
+            <div class="progress-bar bg-warning text-dark" style="width: 90%">90%</div>
+          </div>
+          <h5 class="progress-title  pb-2" data-aos="fade-up-left">PYTHON</h5>
+          <div class="progress mb-3" role="progressbar" aria-label="Warning example" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100">
+            <div class="progress-bar bg-info text-dark" style="width: 80%">80%</div>
+          </div>
+          <h5 class="progress-title  pb-2" data-aos="fade-up-right">JQUARY</h5>
+          <div class="progress mb-3" role="progressbar" aria-label="Danger example" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100">
+            <div class="progress-bar bg-success" style="width: 75%">75%</div>
+          </div>
+        </div>
+        <div class="col-1"></div>
+      </div>
+    </div>
+  </section>
+  <!-- skills section ending here -->
+  <!-- my protfolio section starts here -->
+  <section class="protfolio pb-5 mb-5" id="protfolio">
+    <div class="container">
+      <div class="row p-5 text-center">
+        <div class="col-12"><h1 data-aos="fade-down">Protfolio</h1></div>
+      </div>
+      <!-- nav tabs heading starts here -->
+      <ul class="nav nav-tabs justify-content-center pb-5" id="myTab" role="tablist">
+        <li class="nav-item" role="presentation">
+          <button class="nav-link active" id="home-tab" data-bs-toggle="tab" data-bs-target="#home" type="button" role="tab" aria-controls="home-tab-pane" aria-selected="true" data-aos="fade-up-left">All Works</button>
+        </li>
+        <li class="nav-item" role="presentation">
+          <button class="nav-link" id="profile-tab" data-bs-toggle="tab" data-bs-target="#aboutt" type="button" role="tab" aria-controls="profile-tab-pane" aria-selected="false" data-aos="fade-down-left">Web Design</button>
+        </li>
+        <li class="nav-item" role="presentation">
+          <button class="nav-link" id="contact-tab" data-bs-toggle="tab" data-bs-target="#gallary" type="button" role="tab" aria-controls="contact-tab-pane" aria-selected="false" data-aos="fade-down-right">Gallary</button>
+        </li>
+        <li class="nav-item" role="presentation">
+          <button class="nav-link" id="contact-tab" data-bs-toggle="tab" data-bs-target="#psd" type="button" role="tab" aria-controls="contact-tab-pane" aria-selected="false" data-aos="fade-up-right">PSD</button>
+        </li>
+      </ul>
+      <!-- nav tabs heading ending here -->
+      <!-- nav tabs body starts here -->
+      <div class="tab-content" id="myTabContent">
+        <!-- for home button -->
+        <div class="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="home-tab" tabindex="0">
+          <div class="row">
+            <!-- single item starts here -->
+            <div class="col-4 g-3">
+              <div class="content-area">
+                <img src="assets/images/activity.png"  class="img-fluid" data-aos="fade-left" alt="wed design" title="web design" width="100%" height="300px">
+                <div class="content-overlay"><a href="https://mohammad-hasee.github.io/activity-site/">live demo</a></div>
               </div>
-              <!-- single item ending here -->
-              <!-- single item starts here -->
-              <div class="col-4 g-3">
-                <div class="content-area">
-                  <img src="assets/images/hero.jpg" alt="wed design" title="web design" width="100%" height="100%">
-                  <div class="content-overlay"><a href="#">Hasee</a></div>
-                </div>
-              </div>
-              <!-- single item ending here -->
-              <!-- single item starts here -->
-              <div class="col-4 g-3">
-                <div class="content-area">
-                  <img src="assets/images/hero.jpg" alt="wed design" title="web design" width="100%" height="100%">
-                  <div class="content-overlay"><a href="#">Hasee</a></div>
-                </div>
-              </div>
-              <!-- single item ending here -->
-              <!-- single item starts here -->
-              <div class="col-4 g-3">
-                <div class="content-area">
-                  <img src="assets/images/hero.jpg" alt="wed design" title="web design" width="100%" height="100%">
-                  <div class="content-overlay"><a href="#">Hasee</a></div>
-                </div>
-              </div>
-              <!-- single item ending here -->
-              <!-- single item starts here -->
-              <div class="col-4 g-3">
-                <div class="content-area">
-                  <img src="assets/images/hero.jpg" alt="wed design" title="web design" width="100%" height="100%">
-                  <div class="content-overlay"><a href="#">Hasee</a></div>
-                </div>
-              </div>
-              <!-- single item ending here -->
-              <!-- single item starts here -->
-              <div class="col-4 g-3">
-                <div class="content-area">
-                  <img src="assets/images/hero.jpg" alt="wed design" title="web design" width="100%" height="100%">
-                  <div class="content-overlay"><a href="#">Hasee</a></div>
-                </div>
-              </div>
-              <!-- single item ending here -->
             </div>
-          </div>
-          <div class="tab-pane fade" id="about" role="tabpanel" aria-labelledby="profile-tab" tabindex="0">
-            <div class="row">
-              <!-- single item starts here -->
-              <div class="col-2"></div>
-              <div class="col-4 g-3">
-                <div class="content-area">
-                  <img src="assets/images/hero.jpg" alt="wed design" title="web design" width="100%" height="100%">
-                  <div class="content-overlay"><a href="#">Hasee</a></div>
-                </div>
+            <!-- single item ending here -->
+            <!-- single item starts here -->
+            <div class="col-4 g-3">
+              <div class="content-area">
+                <img src="assets/images/mundana.png" class="img-fluid" data-aos="flip-right" alt="wed design" title="web design" width="100%" height="100%">
+                <div class="content-overlay"><a href="https://mohammad-hasee.github.io/MUNDANA_SITE/">live demo</a></div>
               </div>
-              <!-- single item ending here -->
-              <!-- single item starts here -->
-              <div class="col-4 g-3">
-                <div class="content-area">
-                  <img src="assets/images/hero.jpg" alt="wed design" title="web design" width="100%" height="100%">
-                  <div class="content-overlay"><a href="#">Hasee</a></div>
-                </div>
+            </div>
+            <!-- single item ending here -->
+            <!-- single item starts here -->
+            <div class="col-4 g-3">
+              <div class="content-area">
+                <img src="assets/images/form.png" data-aos="fade-right" alt="wed design" title="web design" width="100%" height="100%">
+                <div class="content-overlay"><a href="https://mohammad-hasee.github.io/SEIP-form/">live demo</a></div>
               </div>
-              <div class="col-2"></div>
-              <!-- single item ending here -->
+            </div>
+            <!-- single item ending here -->
+            <!-- single item starts here -->
+            <div class="col-4 g-3">
+              <div class="content-area">
+                <img src="assets/images/seogram.png" data-aos="fade-right" alt="wed design" title="web design" width="100%" height="100%">
+                <div class="content-overlay"><a href="https://mohammad-hasee.github.io/exam-02/">live demo</a></div>
+              </div>
+            </div>
+            <!-- single item ending here -->
+            <!-- single item starts here -->
+            <div class="col-4 g-3">
+              <div class="content-area">
+                <img src="assets/images/visionary.png" data-aos="flip-left" alt="wed design" title="web design" width="100%" height="100%">
+                <div class="content-overlay"><a href="https://mohammad-hasee.github.io/figma-to-html-site/">live demo</a></div>
+              </div>
+            </div>
+            <!-- single item ending here -->
+            <!-- single item starts here -->
+            <div class="col-4 g-3">
+              <div class="content-area">
+                <img src="assets/images/ardian.png" data-aos="fade-left" alt="wed design" title="web design" width="100%" height="100%">
+                <div class="content-overlay"><a href="https://mohammad-hasee.github.io/adrian-hover-effect/">live demo</a></div>
+              </div>
+            </div>
+            <!-- single item ending here -->
           </div>
+        </div>
+        <!-- for about button -->
+        <div class="tab-pane fade" id="aboutt" role="tabpanel" aria-labelledby="profile-tab" tabindex="0">
           <div class="row">
             <!-- single item starts here -->
             <div class="col-2"></div>
             <div class="col-4 g-3">
               <div class="content-area">
-                <img src="assets/images/hero.jpg" alt="wed design" title="web design" width="100%" height="100%">
-                <div class="content-overlay"><a href="#">Hasee</a></div>
+                <img src="assets/images/black-white.png" data-aos="fade-up-right" alt="wed design" title="web design" width="100%" height="100%">
+                <div class="content-overlay"><a href="https://mohammad-hasee.github.io/BLACK_WHITE-design/">live demo</a></div>
               </div>
             </div>
             <!-- single item ending here -->
             <!-- single item starts here -->
             <div class="col-4 g-3">
               <div class="content-area">
-                <img src="assets/images/hero.jpg" alt="wed design" title="web design" width="100%" height="100%">
-                <div class="content-overlay"><a href="#">Hasee</a></div>
+                <img src="assets/images/appco.png" data-aos="fade-up-left" alt="wed design" title="web design" width="100%" height="100%">
+                <div class="content-overlay"><a href="https://mohammad-hasee.github.io/APPCO-site-design/">live demo</a></div>
               </div>
             </div>
             <div class="col-2"></div>
             <!-- single item ending here -->
         </div>
-          <div class="tab-pane fade" id="gallary" role="tabpanel" aria-labelledby="contact-tab" tabindex="0">sghfh </div>
-          <div class="tab-pane fade" id="psd" role="tabpanel" aria-labelledby="profile-tab" tabindex="0">...</div>
+        <div class="row">
+          <!-- single item starts here -->
+          <div class="col-2"></div>
+          <div class="col-4 g-3">
+            <div class="content-area">
+              <img src="assets/images/blue-trees.png" data-aos="fade-down-right" alt="wed design" title="web design" width="100%" height="100%">
+              <div class="content-overlay"><a href="https://mohammad-hasee.github.io/blue-tree/">live demo</a></div>
+            </div>
+          </div>
+          <!-- single item ending here -->
+          <!-- single item starts here -->
+          <div class="col-4 g-3">
+            <div class="content-area">
+              <img src="assets/images/dot.png" data-aos="fade-down-left" alt="wed design" title="web design" width="100%" height="100%">
+              <div class="content-overlay"><a href="https://mohammad-hasee.github.io/DOT_site-design/">live demo</a></div>
+            </div>
+          </div>
+          <div class="col-2"></div>
+          <!-- single item ending here -->
+      </div>
+      </div>
+      <!-- for gallary button -->
+      <div class="tab-pane fade" id="gallary" role="tabpanel" aria-labelledby="contact-tab" tabindex="0">
+        <div class="row">
+          <!-- single item starts here -->
+          <div class="col-2"></div>
+          <div class="col-4 g-3">
+            <div class="content-area">
+              <img src="assets/images/mundana.png" alt="wed design" title="web design" width="100%" height="100%">
+              <div class="content-overlay"><a href="https://mohammad-hasee.github.io/MUNDANA_SITE/">live demo</a></div>
+            </div>
+          </div>
+          <!-- single item ending here -->
+          <!-- single item starts here -->
+          <div class="col-4 g-3">
+            <div class="content-area">
+              <img src="assets/images/black-white.png" alt="wed design" title="web design" width="100%" height="100%">
+              <div class="content-overlay"><a href="https://mohammad-hasee.github.io/exam-02/">live demo</a></div>
+            </div>
+          </div>
+          <div class="col-2"></div>
+          <!-- single item ending here -->
+      </div>
+      <div class="row">
+        <!-- single item starts here -->
+        <div class="col-2"></div>
+        <div class="col-4 g-3">
+          <div class="content-area">
+            <img src="assets/images/ulence.png" alt="wed design" title="web design" width="100%" height="100%">
+            <div class="content-overlay"><a href="https://mohammad-hasee.github.io/ULENCE_desogn/">live demo</a></div>
+          </div>
         </div>
-        <!-- nav tabs body ending here -->
-      </div>
-    </section>
-    <!-- my protfolio section ending here -->
-    <!-- services sectin starts here -->
-<div class="container-fluid services-section text-light mt-5 mb-5" id="service">
-  <div class="container py-5">
-    <div class="row py-5">
-      <div class="col-md-12 text-center">
-        <h1 class="services-heading display-4 mb-4">Services</h1>
-        <p class="service-paragraph">
-          I'm always ready to create unique, professional and standard websites with excellent composition for you.
-        </p>
-      </div>
+        <!-- single item ending here -->
+        <!-- single item starts here -->
+        <div class="col-4 g-3">
+          <div class="content-area">
+            <img src="assets/images/seogram.png" alt="wed design" title="web design" width="100%" height="100%">
+            <div class="content-overlay"><a href="https://mohammad-hasee.github.io/BLACK_WHITE-design/">live demo</a></div>
+          </div>
+        </div>
+        <div class="col-2"></div>
+        <!-- single item ending here -->
     </div>
-    <div class="row services-content py-5">
-      <div class="col-md-4 mb-4 mb-md-0">
-        <h3 class="h5 fw-semibold mb-4">
-          <span class="fa-solid fs-2 fa-code mt-2" aria-hidden="true"></span>
-          Web Design
-        </h3>
-        <p class="lh-lg">
-          Web design is the process of planning, conceiving,Designing 
-          and organizing content for use on the internet.
-        </p>
       </div>
-      <div class="col-md-4 mb-4 mb-md-0">
-       <h3 class="h5 fw-semibold mb-4">
-        <span class="fa mr-2 fa-mobile" aria-hidden="true"></span>
-        Responsive Design
-       </h3>
-       <p class="lh-lg">
-        The effort required to create a website for the Internet 
-        or an intranet is known as web development..
-       </p>
+      <!-- for psd button -->
+      <div class="tab-pane fade" id="psd" role="tabpanel" aria-labelledby="profile-tab" tabindex="0">
+        <div class="row">
+          <!-- single item starts here -->
+          <div class="col-2"></div>
+          <div class="col-4 g-3">
+            <div class="content-area">
+              <img src="assets/images/visionary.png" alt="wed design" title="web design" width="100%" height="100%">
+              <div class="content-overlay"><a href="https://mohammad-hasee.github.io/figma-to-html-site/">live demo</a></div>
+            </div>
+          </div>
+          <!-- single item ending here -->
+          <!-- single item starts here -->
+          <div class="col-4 g-3">
+            <div class="content-area">
+              <img src="assets/images/activity.png" alt="wed design" title="web design" width="100%" height="100%">
+              <div class="content-overlay"><a href="https://mohammad-hasee.github.io/activity-site/">live demo</a></div>
+            </div>
+          </div>
+          <div class="col-2"></div>
+          <!-- single item ending here -->
       </div>
-      <div class="col-md-4 mb-4 mb-md-0">
-        <h3 class="h5 fw-semibold mb-4">
-          <span class="fa mr-2 fa-laptop" aria-hidden="true"></span>
-          Web Development
-        </h3>
-        <p class="lh-lg">
-          The effort required to create a website for the Internet 
-          or an intranet is known as web development..
-        </p>
-      </div>
+      <div class="row">
+        <!-- single item starts here -->
+        <div class="col-2"></div>
+        <div class="col-4 g-3">
+          <div class="content-area">
+            <img src="assets/images/ardian.png" alt="wed design" title="web design" width="100%" height="100%">
+            <div class="content-overlay"><a href="https://mohammad-hasee.github.io/adrian-hover-effect/">live demo</a></div>
+          </div>
+        </div>
+        <!-- single item ending here -->
+        <!-- single item starts here -->
+        <div class="col-4 g-3">
+          <div class="content-area">
+            <img src="assets/images/ulence.png" alt="wed design" title="web design" width="100%" height="100%">
+            <div class="content-overlay"><a href="https://mohammad-hasee.github.io/ULENCE_desogn/">live demo</a></div>
+          </div>
+        </div>
+        <div class="col-2"></div>
+        <!-- single item ending here -->
     </div>
-    <div class="row services-content ">
-      <div class="col-md-4 mb-4 mb-md-0">
-        <h3 class="h5 fw-semibold mb-4">
-          <span class="fa mr-2 fa-camera" aria-hidden="true"></span>
-          Photoshop
-        </h3>
-        <p class="lh-lg">
-          Photoshop Express is a photo editor app for creators to turn ideas 
-          into completely unique, picture perfect images all from one app, 
-          
-        </p>
       </div>
-      <div class="col-md-4 mb-4 mb-md-0">
-       <h3 class="h5 fw-semibold mb-4">
-        <span class="fa-brands fa-codepen mt-2 fs-2" aria-hidden="true"></span>
-        PSD to Html
-       </h3>
-       <p class="lh-lg">
-        PSD to HTML conversion is wherein the graphic designer creates the design in a PSD format 
-        and the HTML designer converts it into the HTML.
-       </p>
-      </div>
-      <div class="col-md-4 mb-4 mb-md-0">
-        <h3 class="h5 fw-semibold mb-4">
-          <span class="fa-brands fa-figma fs-2 mt-2" aria-hidden="true"></span>
-          Figma to Html
-        </h3>
-        <p class="lh-lg">
-          Figma to html is a plugin for Figma that makes it simple to convert your Figma design to code 
-          without losing any of the design elements or colors..
-        </p>
-      </div>
+      <!-- nav tabs body ending here -->
     </div>
-  </div>
-</div>
-<!-- services sectin ending here -->
+  </section>
+  <!-- my protfolio section ending here -->
+  <!-- services sectin starts here -->
+  <section class="service-section bg-secondary" id="service">
+    <div class="container">
+        <div class="row">
+            <div class="col-8 offset-2">
+                <div class="title text-center">
+                    <h1 class="fw-bold text-uppercase pb-2 mt-5" data-aos="flip-left"
+                    data-aos-easing="ease-out-cubic"
+                    data-aos-duration="2000">My Service</h1>
+                    <p class="p-2" data-aos="fade-up"
+                    data-aos-anchor-placement="top-bottom">I'm always ready to create unique, professional and 
+                        standard websites with excellent composition for you.</p>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-4 pt-4 g-3 shadow-sm p-3 mb-5 rounded">
+                <div class="content text-center pt-4">
+                    <i class="fa-solid fa-code fa-3x pb-2"></i>
+                    <h4 data-aos="fade-down"
+                    data-aos-easing="linear"
+                    data-aos-duration="1500">Web Design</h4>
+                    <p class="lead p-3" data-aos="fade-up"
+                    data-aos-duration="3000">Web design is the process of planning, conceiving,
+                        Designing and organizing content for use on the internet connection.</p>
+                </div>
+            </div>
+            <div class="col-4 pt-4 g-3 shadow-sm p-3 mb-5 rounded">
+                <div class="content text-center pt-4">
+                    <i class="fa-solid fa-mobile-screen-button fa-3x pb-2"></i>
+                    <h4 data-aos="zoom-in-up">Responsive Design</h4>
+                    <p class="lead p-3" data-aos="zoom-in-down">The effort required to create a website for the 
+                        Internet or an intranet is known as web development.The Designer follows the rules.</p>
+                </div>
+            </div>
+            <div class="col-4 pt-4 g-3 shadow-sm p-3 mb-5 rounded">
+                <div class="content text-center pt-4">
+                    <i class="fa-solid fa-laptop fa-3x pb-2"></i>
+                    <h4 data-aos="fade-up"
+                    data-aos-duration="3000">Web Development</h4>
+                    <p class="lead p-3" data-aos="fade-down"
+                    data-aos-easing="linear"
+                    data-aos-duration="1500">The effort required to create a website for the 
+                        Internet or an intranet is known as web development.The Designer follows the rules.</p>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-4  g-3 shadow-sm p-3 mb-5 rounded">
+                <div class="content text-center pt-4">
+                    <i class="fa-solid fa-camera fa-3x pb-2"></i>
+                    <h4 data-aos="fade-up"
+                    data-aos-duration="3000"> Photoshop</h4>
+                    <p class="lead p-3" data-aos="fade-down"
+                    data-aos-easing="linear"
+                    data-aos-duration="1500">Photoshop Express is a photo editor app for creators to turn 
+                        ideas into completely unique, picture perfect images all from 
+                        one</p>
+                </div>
+            </div>
+            <div class="col-4 g-3 shadow-sm p-3 mb-5 rounded">
+                <div class="content text-center pt-4">
+                    <i class="fa-brands fa-codepen fa-3x pb-2"></i>
+                    <h4 data-aos="zoom-in-down">PSD to Html</h4>
+                    <p class="lead p-3" data-aos="zoom-in-up">PSD to HTML conversion is wherein the graphic designer creates 
+                        the design in a PSD format and the HTML designer converts</p>
+                </div>
+            </div>
+            <div class="col-4 g-3 mb-5 pb-5 shadow-sm p-3 mb-5 rounded">
+                <div class="content text-center pt-4">
+                    <i class="fa-brands fa-figma fa-3x pb-2"></i>
+                    <h4 data-aos="fade-down"
+                    data-aos-easing="linear"
+                    data-aos-duration="1500">Figma to Html</h4>
+                    <p class="lead p-3" data-aos="fade-up"
+                    data-aos-duration="3000">Figma to html is a plugin for Figma that makes it simple to 
+                        convert your Figma design to code without losing any of the 
+                         ..</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- service section ending here -->
 <!-- address section starts here -->
+
 <div class="container contact py-5" id="contact">
   <div class="row">
     <div class="col-md-12 text-center">
-        <h1 class="contact-heading display-4">Contact</h1>
+        <h1 class="contact-heading display-4" data-aos="fade-right"
+        data-aos-offset="300"
+        data-aos-easing="ease-in-sine">Contact</h1>
       </div>
   </div>
   <div class="row py-5 mt-5">
@@ -466,32 +609,35 @@
             <p class="mb-1">C block, #9road, Mirpur-01,</p>
             <p  class="mt-0">Dhaka-1216</p>
           </div>
-
+  
           <div class="col-1 icon">
             <span class="fa fa-phone" aria-hidden="true"></span>
           </div>
           <div class="col-11">
             <p> +088 01785007845</p>
           </div>
-
+  
           <div class="col-1 icon">
             <span class="fa fa-envelope-open" aria-hidden="true"></span>
           </div>
           <div class="col-11">
             <a href="mailto:example@email.com"> haseebrahman318@gmail.comm</a>
           </div>
-
+  
         </div>
       </address>
       <div class="row m-o">
         <div class="col-sm-11 map">
-          <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d14602.009425454402!2d90.34501661738288!3d23.80072910059628!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sbd!4v1690043732773!5m2!1sen!2sbd" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+          <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d14602.009425454402!2d90.34501661738288!3d23.80072910059628!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sbd!4v1690043732773!5m2!1sen!2sbd" data-aos="fade-right"
+          data-aos-offset="300"
+          data-aos-easing="ease-in-sine" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
         </div>
       </div>
     </div>
     <!-- address section ending here -->
     <!-- contact section starts here -->
-    <div class="col-md-7">
+    <div class="col-md-7" data-aos="fade-up"
+    data-aos-anchor-placement="bottom-bottom">
       <h4 class="mb-4 fw-bold">Get In Touch</h4>
       <div class="row contact-right">
         <form action="#" method="post">
@@ -500,57 +646,57 @@
             Name
           </label>
           <input type="text" name="name" onfocus="this.value = '';" value="Name">
-
+  
           <label for="email" class="icon">
             <span class="fa mr-2 fa-envelope-open" aria-hidden="true"></span>
             Email
           </label>
           <input type="email" name="email" onfocus="this.value = '';" value="Email">
-
+  
           <label for="name" class="icon">
             <span class="fa mr-2 fa-phone" aria-hidden="true"></span>
             Phone
           </label>
           <input type="text" name="phone" onfocus="this.value = '';" value="Phone">
-
+  
           <label for="text" class="icon message">
             <span class="fa mr-2 fa-edit" aria-hidden="true"></span>
             Message
           </label>
           <textarea name="Message" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Message...';}" required="">Message...</textarea>
-
+  
           <button type="submit" class="btn">Submit</button>
         </form>
       </div>
     </div>
   </div>
-</div>
-<!-- contact section ending here -->
-    <!-- footer section starts here -->
-    <section class="footer p-5">
-      <div class="container-fluid p-5 mb-5">
-        <div class="row">
-          <div class="col-3"></div>
-          <div class="col-6 text-center">
-              <button type="button" class="btn btn-info">
-                <ul>
-                    <li><a href="https://www.facebook.com/haseeb.rahman.106902"><i class="fa-brands fa-facebook-messenger social-icon"></i></a></li>
-                    <li> <a href="https://mail.google.com/mail/u/0/#inbox"><i class="fa-solid fa-envelope-open-text social-icon"></i></a></li>
-                    <li><a href="https://github.com/Mohammad-Hasee"><i class="fa-brands fa-square-github social-icon"></i></a></li>
-                    <li><a href="https://www.linkedin.com/feed/"><i class="fa-brands fa-linkedin social-icon"></i></a></li>
-                </ul>
-            </button>
-              <p class="pt-4 pb-3 lead">
-              <a href="#">Privacy</a> |<a href="#">Terms</a>|
-              <a href="#">FAQs</a>|<a href="#">Help</a>|<br>
+  </div>
+  <!-- contact section ending here -->
+  <!-- footer section starts here -->
+  <section class="footer">
+    <div class="container">
+      <div class="row">
+        <div class="col-6 mx-auto">
+          <div class="content text-center">
+            <div class="social-communication">
+              <ul>
+                <li><a href="https://www.facebook.com/haseeb.rahman.106902"><i class="fa-brands fa-facebook-messenger social-icon"></i></a></li>
+                <li> <a href="https://mail.google.com/mail/u/0/#inbox"><i class="fa-solid fa-envelope-open-text social-icon"></i></a></li>
+                <li><a href="https://github.com/Mohammad-Hasee"><i class="fa-brands fa-square-github social-icon"></i></a></li>
+                <li><a href="https://www.linkedin.com/feed/"><i class="fa-brands fa-linkedin social-icon"></i></a></li>
+            </ul>
+            <p class="pt-3">
+              <a href="#">Privacy</a> |<a href="#"> Terms</a>|
+              <a href="#"> FAQs</a>|<a href="#">Help</a>|<br>
               </p>
-              <small class="pb-5 mb-5 pt-5 lead">@ all rights reserved designed by Mohammad Haseeb</small> 
+              <small>@ all rights reserved designed by Mohammad Haseeb</small> 
+            </div>
           </div>
-          <div class="col-3"></div>
         </div>
       </div>
-    </section>
-    <!-- footer section ending here -->
+    </div>
+  </section>
+  
     <!-- little footer section starts here -->
     <section class="little-footer p-5">
       <div class="container-fluid">
@@ -560,9 +706,16 @@
       </div>
     </section>
     <!-- little footer section ending here -->
+  
 
 
     <!-- bootstrap js link -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- aos js cdn link -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <!-- initialize aos link -->
+    <script>
+      AOS.init();
+    </script>
 </body>
 </html>
